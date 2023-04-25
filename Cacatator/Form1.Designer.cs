@@ -41,7 +41,6 @@
             textBox4 = new TextBox();
             label4 = new Label();
             label5 = new Label();
-            Result = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -147,21 +146,11 @@
             label5.TabIndex = 5;
             label5.Text = "Y Number";
             // 
-            // Result
-            // 
-            Result.AutoSize = true;
-            Result.Location = new Point(163, 268);
-            Result.Name = "Result";
-            Result.Size = new Size(0, 15);
-            Result.TabIndex = 6;
-            Result.Click += label6_Click;
-            // 
             // Cacator
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(Result);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(textBox4);
@@ -190,6 +179,5 @@
         private TextBox textBox4;
         private Label label4;
         private Label label5;
-        private Label Result;
     }
 }

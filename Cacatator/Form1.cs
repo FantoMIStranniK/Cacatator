@@ -40,17 +40,26 @@ namespace Cacatator
         {
             float? resultNum = XNumber * YNumber;
 
-            Result.Text = resultNum.ToString();
+            ShowResult(resultNum.ToString());
         }
 
         private void SummButton_Click(object sender, EventArgs e)
         {
             float? resultNum = XNumber + YNumber;
 
-            Result.Text = resultNum.ToString();
+            ShowResult(resultNum.ToString());
+        }
+        private void ShowResult(string message)
+        {
+            MessageBox.Show(message);
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
         {
 
         }
